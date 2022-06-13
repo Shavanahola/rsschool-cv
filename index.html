@@ -10,54 +10,60 @@
   </head>
   <body>
     <header class="header">
-      <div class="navigation navigation-bar">
-        <ul class="navigation-list">
-          <li class="navigation-item">
-            <a class="navigation-link" href="#Contacts">Contacts</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#About-me">About me</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#Skills">Skills</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#Code-examples">Code examples</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#Education">Education</a>
-          </li>
-          <li class="navigation-item">
-            <a class="navigation-link" href="#Languages">Languages</a>
-          </li>
-        </ul>
+      <div class="container header-container">
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item">
+              <a class="nav-link" href="#Contacts">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#About-me">About me</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Code-examples">Code examples</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Languages">Languages</a>
+            </li>
+          </ul>
+        </nav>
       </div>
     </header>
     <main class="main">
-      <div class="main-container">
-        <section class="section-profile">
-          <img src="./assets/img/image.jpg" alt="avatar" />
+      <div class="container main-container">
+        <section class="section section-profile">
+          <img
+            src="./assets/img/image.jpg"
+            alt="avatar"
+            class="section-profile-logo"
+          />
           <div class="section-profile-title">
-            <h1>Ivanov Maxim</h1>
+            <h1 class=".section-title main-title">Ivanov Maxim</h1>
           </div>
         </section>
         <section class="section" id="Contacts">
           <h2 class="section-title">Contacts</h2>
           <ul class="sections-list">
-            <li>
+            <li class="section-item">
               E-mail:
               <a href="kadisetramad.reizel@gmail.com" title="email">
                 kadisetramad.reizel@gmail.com
               </a>
             </li>
-            <li>Discord: Savanahola#9539(@Savanahola)</li>
-            <li>
+            <li class="section-item">Discord: Savanahola#9539(@Savanahola)</li>
+            <li class="section-item">
               GitHub:
               <a href="https://github.com/Shavanahola" title="github">
                 Shavanahola
               </a>
             </li>
-            <li>
+            <li class="section-item">
               Telegram:
               <a href="https://t.me/Savanahola" title="Telegram">
                 Shavanahola
@@ -75,10 +81,14 @@
         <section class="section" id="Skills">
           <h2 class="section-title">Skills</h2>
           <ul class="sections-list">
-            <li>Setting up and repairing personal computers;</li>
-            <li>Setting up Windows and Linux operating systems;</li>
-            <li>Working with local networks;</li>
-            <li>
+            <li class="section-item">
+              Setting up and repairing personal computers;
+            </li>
+            <li class="section-item">
+              Setting up Windows and Linux operating systems;
+            </li>
+            <li class="section-item">Working with local networks;</li>
+            <li class="section-item">
               work with information systems 1C, medical information systems,
               laboratory information systems.
             </li>
@@ -108,6 +118,16 @@ function noSpace(x){
         </section>
       </div>
     </main>
-    <footer class="footer"></footer>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div>
+          © 2022
+          <a href="https://github.com/Shavanahola" class="github nav-link">
+            Shavanahola
+          </a>
+        </div>
+        <a href="https://rs.school/js/" class="rss"></a>
+      </div>
+    </footer>
   </body>
 </html>
