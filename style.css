@@ -85,6 +85,11 @@ body {
     padding: 0;
     line-height: normal;
   }
+  .section-title,
+  p,
+  pre {
+    margin: 0 0 0 10px;
+  }
 }
 
 @media (max-width: 614px) {
@@ -93,6 +98,11 @@ body {
   }
   .nav .nav-list {
     display: block;
+  }
+  .section-title,
+  p,
+  pre {
+    margin: 0 0 0 10px;
   }
 }
 
