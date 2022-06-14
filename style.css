@@ -68,16 +68,15 @@ body {
 .section {
   width: 50%;
 }
-
+.section-title,
+p,
+pre {
+  margin: 0 0 0 10px;
+}
 @media (max-width: 768px) {
   .section {
     width: 100%;
     padding: 0;
-  }
-  .section-title,
-  p,
-  pre {
-    margin: 0 0 0 10px;
   }
 }
 @media (max-width: 854px) {
