@@ -89,10 +89,13 @@ body {
 }
 
 .section-profile-title {
+  display: flex;
   width: 250px;
   height: 200px;
-  line-height: 200px;
   text-align: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .section-title {
