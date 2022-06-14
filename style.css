@@ -74,6 +74,11 @@ body {
     width: 100%;
     padding: 0;
   }
+  .section-title,
+  p,
+  pre {
+    margin: 0 0 0 10px;
+  }
 }
 @media (max-width: 854px) {
   .nav a.nav-link {
