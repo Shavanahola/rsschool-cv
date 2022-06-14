@@ -1,1 +1,152 @@
-/*css*/
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-width: 320px;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: rgb(20, 55, 83);
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  min-height: 50px;
+}
+
+.header {
+  background-color: rgb(210, 233, 252);
+}
+
+.nav-list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.nav-item {
+  display: inline;
+  margin-right: 5px;
+  padding: 5px;
+}
+
+.nav-link {
+  padding: 0 20px;
+  line-height: 50px;
+  text-decoration: none;
+  color: rgb(13, 61, 20);
+  transition: color 0.5s;
+}
+
+.nav-link:hover {
+  color: rgb(124, 0, 173);
+  box-shadow: 1px 1px rgb(129, 198, 255), 2px 2px rgb(129, 198, 255),
+    3px 3px rgb(129, 198, 255);
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  transition: 1s;
+}
+
+.main-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section {
+  width: 50%;
+}
+
+@media (max-width: 768px) {
+  .section {
+    width: 100%;
+  }
+}
+
+.section-profile {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 35px;
+}
+
+.section-profile-logo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.section-profile-title {
+  display: flex;
+  width: 250px;
+  height: 200px;
+  text-align: center;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.section-title {
+  font-size: 20px;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: rgb(13, 61, 20);
+}
+
+.main-title {
+  font-size: 150%;
+}
+
+.section-item a {
+  text-decoration: none;
+  transition: color 0.5s;
+}
+.section-item a:hover {
+  color: rgb(124, 0, 173);
+}
+
+.section-item {
+  list-style-type: none;
+  position: relative;
+  padding-left: 30px;
+}
+
+.section-item::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0px;
+  width: 10px;
+  height: 10px;
+  border: 1px solid rgb(210, 233, 252);
+  border-radius: 50%;
+}
+
+.footer {
+  background-color: rgb(210, 233, 252);
+  padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rss {
+  width: 140px;
+  height: 40px;
+  background: no-repeat url("./assets/svg/rs_school_js.svg");
+}
