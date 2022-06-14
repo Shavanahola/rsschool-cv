@@ -18,6 +18,7 @@ body {
   font-size: 18px;
   font-weight: 400;
   line-height: 1.5;
+  color: #143753;
 }
 
 .container {
@@ -34,7 +35,6 @@ body {
   display: flex;
   justify-content: flex-end;
   align-items: center;
-  list-style: none;
 }
 
 .nav-item {
@@ -53,12 +53,18 @@ body {
 
 .nav-link:hover {
   color: #7c00ad;
+  box-shadow: 1px 1px rgb(129, 198, 255), 2px 2px rgb(129, 198, 255),
+    3px 3px rgb(129, 198, 255);
+  -webkit-transform: translateX(-3px);
+  transform: translateX(-3px);
+  transition: 1s;
 }
 
 .main-container {
   display: flex;
   flex-wrap: wrap;
 }
+
 .section {
   width: 50%;
 }
@@ -68,11 +74,36 @@ body {
     width: 100%;
   }
 }
+
+.section-profile {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  padding: 35px;
+}
+
+.section-profile-logo {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+}
+
+.section-profile-title {
+  width: 250px;
+  height: 200px;
+  line-height: 200px;
+  text-align: center;
+}
+
 .section-title {
   font-size: 20px;
   font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 5px;
+  letter-spacing: 3px;
+  color: #0d3d14;
+}
+
+.main-title {
+  font-size: 150%;
 }
 
 .section-item a {
@@ -86,49 +117,33 @@ body {
 .section-item {
   list-style-type: none;
   position: relative;
-  margin-bottom: 10px;
-  padding-left: 30px;
+  margin-bottom: 5px;
+  padding-left: 20px;
+  padding-top: 3px;
 }
 
 .section-item::before {
-  content: "";
   position: absolute;
-  top: 8px;
   left: 0px;
-  width: 10px;
-  height: 10px;
-  border: 1px solid rgb(210, 233, 252);
-  border-radius: 50%;
-}
-
-.section-profile {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  padding: 50px 30px 35px;
-}
-
-.section-profile-logo {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-}
-
-.main-title {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-}
-
-.rss {
-  width: 121px;
-  height: 45px;
-  background-image: url("./assets/svg/rs_school_js.svg");
-  background-size: contain;
-  background-repeat: no-repeat;
+  content: "\2022";
+  color: rgb(210, 233, 252);
+  display: inline-block;
+  width: 20px;
 }
 
 .footer {
   background-color: rgb(210, 233, 252);
   padding: 20px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.rss {
+  width: 140px;
+  height: 40px;
+  background: no-repeat url("./assets/svg/rs_school_js.svg");
 }
