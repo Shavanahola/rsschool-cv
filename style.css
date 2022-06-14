@@ -68,27 +68,21 @@ body {
 .section {
   width: 50%;
 }
-
+.section-title,
+p,
+pre {
+  margin: 0 0 0 10px;
+}
 @media (max-width: 768px) {
   .section {
     width: 100%;
     padding: 0;
-  }
-  .section-title,
-  p,
-  pre {
-    margin: 0 0 0 10px;
   }
 }
 @media (max-width: 854px) {
   .nav a.nav-link {
     padding: 0;
     line-height: normal;
-  }
-  .section-title,
-  p,
-  pre {
-    margin: 0 0 0 10px;
   }
 }
 
@@ -98,11 +92,6 @@ body {
   }
   .nav .nav-list {
     display: block;
-  }
-  .section-title,
-  p,
-  pre {
-    margin: 0 0 0 10px;
   }
 }
 
