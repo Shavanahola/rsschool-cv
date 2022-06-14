@@ -127,7 +127,7 @@ body {
 
 .section-item::before {
   position: absolute;
-  left: 0px;
+  left: 0;
   content: "\2022";
   color: rgb(210, 233, 252);
   display: inline-block;
