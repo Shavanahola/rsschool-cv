@@ -169,5 +169,5 @@ pre {
 .rss {
   width: 140px;
   height: 40px;
-  background: no-repeat url('./assets/svg/rs_school_js.svg');
+  object-fit: cover;
 }
